@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+  </head>
+
+
+  <body>
+    <main>
+      <h1 class="header-style" >Password Generator</h1>
+      <div class="password-textfield">
+        <span id="final-password">P4$5W0rD!</span>
+        <ion-icon id="copy-icon" name="copy-outline"></ion-icon>
+      </div>
+      <div class="create-password | font-style">
+        <div class="create-password-one">
+          <h2>Character length</h2>
+          <h2 id="character-length" >0</h2>
+        </div>
+        <div class="slide-container">
+          <input type="range" min="0" max="25" id="range" class="slider" value="0">
+        </div>
+        <div class=" container uppercase">
+          <input id="uppercaseCheck" class="checkbox" type="checkbox" name="" value="false">
+          <h2>Include Uppercase Letters</h2>
+        </div>
+        <div class="container lowercase">
+          <input id="lowercaseCheck" class="checkbox" type="checkbox" name="" value="false">
+          <h2>Include Lowercase Letters</h2>
+        </div>
+        <div class="container numbers">
+          <input id="numbersCheck" class="checkbox" type="checkbox" name="" value="false">
+          <h2>Include Numbers</h2>
+        </div>
+        <div class="container symbols">
+          <input id="symbolsCheck" class="checkbox" type="checkbox" name="" value="false">
+          <h2>Include Symbols</h2>
+        </div>
+        <div class="strength">
+          <h2>Strength</h2>
+          <div class="strength-icons">
+            <ion-icon name="shield-outline"></ion-icon>
+            <ion-icon name="shield-outline"></ion-icon>
+            <ion-icon name="shield-outline"></ion-icon>
+            <ion-icon name="shield-outline"></ion-icon>
+          </div>
+        </div>
+        <button onclick="generatePassword()" class="generate-button" type="button" name="button">Generate <ion-icon name="arrow-forward-outline"></ion-icon></button>
+      </div>
+    </main>
+  </body>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="main.js">
+
+  </script>
+</html>

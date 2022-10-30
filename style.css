@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&family=Montserrat:wght@500&family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&family=Montserrat:wght@500&family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+/*---------------------------------------------Root---------------------------*/
+
+:root{
+  --clr-neutral: rgb(255, 255, 255);
+  --clr-preset: rgb(78, 79, 86);
+  --clr-h1: rgb(115, 125, 124);
+  --clr-main: rgb(223, 222, 229);
+  --clr-button-font: rgb(30, 30, 27);
+  --clr-length-font:rgb(164, 255, 175);
+
+  --clr-slider: rgb(227, 226, 233);
+  --clr-slider-bg: rgb(24, 23, 31);
+
+  --clr-bg-one: rgb(36, 35, 43);
+  --clr-bg-two: rgb(24, 23, 31);
+  --clr-bg-main: rgb(17, 16, 22);
+
+  --clr-button: rgb(164, 255, 175);
+
+  --ff-main: "Vietnam Pro", sans-serif;
+
+  --fs-300: .75rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+}
+
+/*-------------------------------------------------General-Styling------------*/
+
+.header-style{
+  font-family: var(--ff-main);
+  font-size: var(--fs-700);
+  color: var(--clr-h1);
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.font-style{
+  font-family: var(--ff-main);
+}
+
+
+
+/*----------------------------------------------Main--------------------------*/
+
+body{
+  background-color: var(--clr-bg-main);
+}
+
+main{
+  width: 100%;
+  margin: auto;
+}
+
+.password-textfield{
+  display: flex;
+  padding: 1rem;
+  background-color: var(--clr-bg-one);
+  color: var(--clr-preset);
+  font-weight: bold;
+  justify-content: space-between;
+  margin: 1rem;
+  border-radius: 2px;
+}
+
+#copy-icon{
+  color: var(--clr-button);
+  font-weight: bold;
+  font-size: var(--fs-500);
+  cursor: pointer;
+}
+
+.create-password{
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--clr-bg-one);
+  color: var(--clr-main);
+}
+
+.create-password-one{
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  padding: .5rem;
+  justify-content: space-between;
+}
+
+#character-length{
+  color: var(--clr-button);
+  font-weight: bold;
+  font-size: var(--fs-500);
+}
+
+.slider{
+  -webkit-appearance: none;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: linear-gradient(90deg, rgb(164, 255, 175) 0%, rgb(227, 226, 233) 0%);
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2;
+  border-radius: 1rem;
+  margin-bottom: .5rem;
+}
+
+.slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--clr-slider);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .1s .1s;
+}
+
+.slider::-moz-range-thumb{
+  width: 20px;
+  height: 20px;
+  background-color: var(--clr-slider);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-start;
+}
+
+.container input{
+  margin-right: 0.5rem;
+}
+
+
+.strength{
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+}
+
+.generate-button{
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  background-color: var(--clr-button);
+  border: 2px solid var(--clr-bg-one);
+  transition: 0.1s;
+}
+
+.generate-button:hover{
+  cursor: pointer;
+  background-color: var(--clr-bg-one);
+  border: 2px solid var(--clr-button);
+  color: var(--clr-button);
+  transition: 0.1s;
+}
+
+.generate-button ion-icon{
+  vertical-align: sub;
+}
+
+.strength-icons ion-icon{
+  font-size: var(--fs-600);
+  font-weight: bolder;
+  color: green;
+}
+
+.checkbox{
+}
