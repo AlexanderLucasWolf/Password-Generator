@@ -21,6 +21,11 @@
   --clr-slider: rgb(227, 226, 233);
   --clr-slider-bg: rgb(24, 23, 31);
 
+  --clr-strength-one: rgb(202, 55, 16);
+  --clr-strength-two: rgb(224, 180, 18);
+  --clr-strength-three: rgb(217, 214, 18);
+  --clr-strength-four: rgb(16, 205, 42);
+
   --clr-bg-one: rgb(36, 35, 43);
   --clr-bg-two: rgb(24, 23, 31);
   --clr-bg-main: rgb(17, 16, 22);
@@ -76,6 +81,10 @@ main{
   margin: 1rem;
   border-radius: 2px;
 }
+
+/*.password-textfield span{
+  color: var(--clr-neutral);
+}*/
 
 #copy-icon{
   color: var(--clr-button);
@@ -175,9 +184,9 @@ main{
 }
 
 .strength-icons ion-icon{
-  font-size: var(--fs-600);
+  font-size: var(--fs-800);
   font-weight: bolder;
-  color: green;
+  color: var(--clr-preset);
 }
 
 .checkbox{
