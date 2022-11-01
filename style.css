@@ -155,6 +155,10 @@ main{
   margin-right: 0.5rem;
 }
 
+.container label{
+  letter-spacing: 0.5px;
+}
+
 
 .strength{
   display: flex;
@@ -190,4 +194,38 @@ main{
 }
 
 .checkbox{
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/*Responsive Design for Tablet and PC*/
+
+@media (min-width: 799px) {
+  body{
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1199px) {
+  body{
+    width: 65%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1499px) {
+  body{
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1919px) {
+  body{
+    width: 35%;
+    margin: auto;
+  }
 }
