@@ -157,6 +157,7 @@ main{
 
 .container label{
   letter-spacing: 0.5px;
+  display: flex;
 }
 
 
@@ -194,6 +195,42 @@ main{
 }
 
 .checkbox{
+}
+
+.container input[type="checkbox"]{
+  opacity: 0;
+  position: absolute;
+}
+
+.container label::before{
+  content: "";
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid var(--clr-neutral);
+  margin-right: 1em;
+  border-radius: 0.2em;
+}
+
+.container label:hover::before,
+.container input[type="checkbox"]:hover + label::before{
+  background-color: var(--clr-button);
+}
+
+.container input[type="checkbox"]:checked + label::before{
+  content:"\002714";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-bg-one);
+  font-weight: bolder;
+  font-size: var(--fs-400);
+  background-color: var(--clr-button);
+  border-color: var(--clr-bg-main);
+  border-radius: 0;
+}
+
+.container input[type="checkbox"]:focus + label::before{
+  box-shadow: 0 0 2px var(--clr-neutral);
 }
 
 .pointer {
